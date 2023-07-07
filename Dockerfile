@@ -14,7 +14,7 @@ RUN yum -y install epel-release
 RUN yum -y install python3-devel
 RUN yum -y install tigervnc-server xorg-x11-fonts-Type1
 RUN yum -y install Xvfb
-
+RUN yum -y install mtdev
 RUN pip3.6 install --user Cython
 RUN pip3.6 install --upgrade pip setuptools virtualenv
 RUN pip3.6 install --user install docutils
