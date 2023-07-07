@@ -10,7 +10,7 @@ required to start a vnc server on the container and tells the container
 to display imageGen.py, which is a python file that uses kivy to display
 a label that says, "Hello World!".
 
-\*\*How to run this program\*\* To run this program plug these to
+\*\*How to run this program\*\* To run this program plug the following two
 commands into commandline/terminal, make sure you\'re running this
 commands from the root of the repo
 
