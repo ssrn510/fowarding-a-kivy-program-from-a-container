@@ -12,23 +12,8 @@ ENV LANG=en_US.utf8
 RUN yum -y install python3
 RUN yum -y install epel-release
 RUN yum -y install python3-devel
-RUN yum -y groupinstall 'Development tools'
-RUN yum -y install autoconf automake cmake gcc gcc-c++ git make pkgconfig ninja-build alsa-lib-devel pulseaudio-libs-devel libX11-devel libXext-devel libXrandr-devel liXcursor-devel libXfixes-devel libXi-devel libXScrSaver-devel dbus-devel ibus-devel fcitx-devel systemd-devel mesa-libGL-devel libxkbcommon-devel-mesa-libGLES-devel libdrm-devel mesa-libgbm-devel libsamplerate-devel
-RUN yum -y install gcc
-RUN yum -y install yum-utils
-RUN yum -y install python3-devel
-RUN yum -y install mesa-libGLU-devel
-RUN yum -y install mesa-libGL-devel
-RUN yum -y install mesa-dri-drivers
-RUN yum -y install mesa-libGLw-devel.x86_64
-RUN yum -y install mesa-libGL-devel
-RUN yum -y install -y mtdev
-RUN yum -y install zlib
-RUN yum -y install eog dbus-x11
-RUN dbus-uuidgen > /var/lib/dbus/machine-id
 RUN yum -y install tigervnc-server xorg-x11-fonts-Type1
 RUN yum -y install Xvfb
-RUN yum -y groupinstall 'GNOME Desktop'
 
 RUN pip3.6 install --user Cython
 RUN pip3.6 install --upgrade pip setuptools virtualenv
