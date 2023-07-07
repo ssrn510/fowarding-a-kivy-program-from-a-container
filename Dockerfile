@@ -28,9 +28,4 @@ WORKDIR /home/work
 COPY imageGen.py /home/work
 COPY cmds.sh /home/work
 
-
-RUN echo "=========="
-RUN echo $LIBGL_ALWAYS_INDIRECT
-RUN echo "=========="
-
 CMD ["./cmds.sh"]
